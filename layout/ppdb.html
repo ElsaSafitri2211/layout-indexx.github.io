@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Elsa Safitri</title>
+	<title>WEB SMK NEGERI KERSANA</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+	window.onload = function() { jam(); }
+	
+	function jam () {
+	var e = document.getElementById('jam'),
+	d = new Date (), h, m, s;
+	h = d.getHours();
+	m = set (d.getMinutes());
+	s = set (d.getSeconds());
+	
+	e.innerHTML = h + ':'+ m +':' + s;
+	
+	setTimeout ('jam()', 1000);
+	}
+	
+	function set(e) {
+	e = e < 10 ? '0'+ e : e;
+	return e;
+	}
+	</script>
+
+</head>
+<body>
+    <div class="wrap">
+	    <div class="header">
+		<div class="Logo Smk N 1 Kersana.PNG">
+		<img align="left" src="Logo Smk N 1 Kersana.PNG"alt="Logo Smk N 1 Kersana.PNG" "left"width="95"height="95"
+			<p><h1 style="text-align:center;">Website Sederhana SMK Negeri 1 Kersana</h1>
+			<p style="text-align:center;">Kabupaten Brebes - Pemerintahan Provinsi JAWA TENGAH <br>
+			    Jln. Raya Jagapura-Kersana Brebes Kode Poss 52264</p>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="indexx.html">Menu Home</a></li>
+				<li><a href="visimisi.html">VisiMisi</a></li>
+				<li><a href="Sejarah.html">Sejarah</a></li>
+				
+				<li class="dropdown"><a href="#">Jurusan</a>
+				  <ul class="isi-dropdown">
+				    <li><a href="tkr.html">TKR</a></li>
+					<li><a href="multimedia.html">MULTIMEDIA</a></li>
+					<li><a href="welding.html">WELDING</a></li>
+					<li><a href="jasaboga.html">JASA BOGA</a></li>
+					<li><a href="akuntansi.html">AKUNTANSI</a></li>
+					<li><a href="tatabusana.html">TATA BUSANA</a></li>
+					</ul>
+				</li>
+				<li><a href="organisasi.html">Organisasi</a></li>	
+				<li><a href="lokasi.html">Lokasi</a></li>	
+				<li><a href="prestasi.html">Prestasi</a></li>	
+				<li class="dropdown"><a href="#">Pengumuman</a>
+				  <ul class="isi-dropdown">
+				    <li><a href="ppdb.html">PPDB</a></li>
+					<li><a href="kelulusan.html">Pengumuman UNBK</a></li>
+					</ul>
+				</li>
+			    <li class="dropdown"><a href="#">Data</a>
+				  <ul class="isi-dropdown">
+				    <li><a href="guruu.html">Identitas Guru</a></li>
+					<li><a href="siswa.html">Identitas Siswa</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="badan">			
+			<div class="sidebar">
+				<p style= "text-align:center;"> Berita Terkini</p>
+				<ul>
+					<li><a href="#"> Prestasi Olahraga Gulat </a></li><br>
+					<p>Ekstra Olahraga Gulat SMK Negeri 1 Kersana mengikuti POPDA 
+					di tingkat Provinsi Jawa Tengah
+					mendapatkan juara 2</p>
+					<li><a href="#">Pemberitahuan Bulan Ramadhan</a></li>
+					<p> Informasi tentang pelaksanaan bulan ramadhan
+					di SMK Negeri 1 Kersana</p>
+				</ul>
+				    <p style= "text-align:center;"> <B>Kalender Pendidikan</B>
+					<p style= "text-align:center;"> <B>Jam</B><br>
+					<h3 style="text-align:center; font-size:20px; font-family=verdana;" id="jam"></p>
+								
+								
+				
+			</div>
+			<div class="content">
+			    <h1 style= "text-align:center;"> Penerimaan Siswa Baru<br><br></h1>
+			
+					<h4>Pengisian Form Pendaftaran</h4>
+					<body>
+					<form action=" indexx.html" method="get">
+					<div>
+					<label for='nama'>Nama</label>
+					<input type="text" name="nama" placeholder="Nama Anda" required="" />
+					</div>
+					<div>
+					<label for='tl'>Tempat Lahir</label>
+					<input type="text" name="tl" placeholder="Tempat Lahir" required=""
+					>
+					</div>
+					<div>
+					<label for='tgl'>Tanggal Lahir</label>
+					<input type="date" name="tgl_lahir"required="">
+					</div>
+					<div>
+					<label for='alamat'>Alamat</label>
+					<textarea style="text-align:center" name="pesan" rows="5" cols="25"
+					placeholder="Alamat"></textarea>
+					</div>
+					<div>
+					
+						<label for='agama'>Agama</label>
+						<select nama='agama'>
+						<option>Islam</option>
+						<option>Katolik</option>
+						<option>Protestan</option>
+						<option>Hindu</option>
+						<option>Budha</option>
+						<option>Konghucu</option>
+					</select>
+					</div><br>
+					<div>
+			        <label for='jk'>Jenis Kelamin</label>
+					<select name='jk'>
+					<option>Laki-laki</option>
+					<option>Perempuan</option>
+					</select>
+					</div><br>
+					<div>
+			        <label for='as'>Asal Sekolah</label>
+					<input type="text" name="as" placeholder="Asal Sekolah" required="">
+					</div><br>
+					<div>
+					<input type="submit" value="Kirim" >
+					<input type="submit" value="Batal" >
+					</h4>
+					</div>
+					</form>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="footer">
+	           <p style= "text-align:center;">XII MULTIMEDIA C- Elsa Safitri</p>
+		</div>
+	</div>
+</body>
+</html>

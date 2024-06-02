@@ -1,0 +1,118 @@
+.wrap{
+	background:#008080;
+	width: 1366px;
+	margin: 25px auto;
+}
+
+/*bagian header*/
+.wrap .header{
+	background:#A0522D;
+	/*height: 50px;*/
+	padding: 2px 10px;
+}
+
+/*akhir header*/
+
+/*style table*/
+    .table-style{
+	font-family: sans-serif
+	color: #444;
+	border-collapse: collapse;
+	width:50%;
+	border: 1px solid #f2f5f7;
+    }
+	
+	.table-style tr th{
+	background: #35a9DB
+	color: #fff;
+	font-weight: normal;
+	}
+	
+	.table-style, th, td{
+		padding: 8px 20px;
+		text-align: center;
+	}
+	
+	.table-style tr:hover{
+		background-color: #2F4F4F;
+	}
+    .table-style tr:nth-child(even){
+	    background-color: #f2f2f2;
+    }
+/*akhir style table*/
+li.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown:hover .isi-dropdown {
+		display: block;
+	}
+
+	.isi-dropdown a:hover {
+		color: #fff !important;
+	}
+
+	.isi-dropdown {
+		position: absolute;
+		display: none;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		background-color: #f9f9f9;
+	}
+
+	.isi-dropdown a {
+		color: #2F4F4F !important;
+	}
+
+	.isi-dropdown a:hover {
+		color: #232323 !important;
+		background: #f3f3f3 !important;
+	}
+
+/*bagian menu*/
+.wrap .menu{
+	background: pink;
+}
+
+.wrap .menu ul{
+	padding: 0;
+	margin: 0;
+	background:#1E90FF;
+	overflow: hidden;
+}
+
+.wrap .menu ul li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+}
+/*akhir menu*/
+
+.clear{
+	clear: both;
+}
+
+.badan{
+	height: 550px;
+}
+/*bagian sidebar*/
+.wrap .badan .sidebar{
+	background:#ADD8E6;
+	float: left;	
+	width: 25%;
+	height: 100%;
+}
+
+/*akhir sidebar*/
+
+.wrap .badan .content{
+	background:#87CEEB;
+	float: left;
+	height: 100%;
+	width: 75%;	
+}
+
+.wrap .footer{
+	width: 100%;
+	padding: 10px;
+}
